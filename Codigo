@@ -1,0 +1,22 @@
+package com.ejercicio.ejerciciostema1;
+
+import java.util.Scanner;
+
+public class EjerciciosTema1 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double total;
+        System.out.println("Introduce unprecio: ");
+        double precio = sc.nextDouble();
+        total = calcularPrecio(precio);
+        System.out.println("El valor total con iva es: " + total);
+
+    }
+
+    public static double calcularPrecio(double precio) {
+        double iva = precio * 0.20;
+        return precio + iva;
+    }
+
+}
